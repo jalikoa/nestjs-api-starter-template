@@ -1914,10 +1914,10 @@
     "@types/node" "*"
     form-data "^4.0.0"
 
-"@types/supertest@^6.0.2":
-  version "6.0.3"
-  resolved "https://registry.npmmirror.com/@types/supertest/-/supertest-6.0.3.tgz"
-  integrity sha512-8WzXq62EXFhJ7QsH3Ocb/iKQ/Ty9ZVWnVzoTKc9tyyFRRF3a74Tk2+TLFgaFFw364Ere+npzHKEJ6ga2LzIL7w==
+"@types/supertest@^7.2.1":
+  version "7.2.1"
+  resolved "https://registry.yarnpkg.com/@types/supertest/-/supertest-7.2.1.tgz#165e99f10fd652027cf1eaa74b55081b6daa0965"
+  integrity sha512-4CbBvoYVLHL7+yhbYrZET0vsvuyXTC05aRe7dNQkwMzm56auceoy6Yu3K50uZmwfHna1os3CMSgM/3QVkUtPTw==
   dependencies:
     "@types/methods" "^1.1.4"
     "@types/superagent" "^8.1.0"
@@ -3990,21 +3990,9 @@ fast-xml-builder@^1.2.0:
     path-expression-matcher "^1.6.2"
     xml-naming "^0.3.0"
 
-fast-xml-parser@^5.10.1:
+fast-xml-parser@^5.10.1, fast-xml-parser@^5.3.4:
   version "5.10.1"
   resolved "https://registry.yarnpkg.com/fast-xml-parser/-/fast-xml-parser-5.10.1.tgz#19313f7c9386c47fa4a1de527547b73ed2cfcede"
-  integrity sha512-IEMIf7298kXuZSRFoGfMYrl7is8LpavODgbNz1cwIudv7KwVFnuU+UsMporfq6PD6aXSlawZlARiA3UywCTfMw==
-  dependencies:
-    "@nodable/entities" "^3.0.0"
-    fast-xml-builder "^1.2.0"
-    is-unsafe "^2.0.0"
-    path-expression-matcher "^1.6.2"
-    strnum "^2.4.1"
-    xml-naming "^0.3.0"
-
-fast-xml-parser@^5.3.4:
-  version "5.10.1"
-  resolved "https://registry.npmmirror.com/fast-xml-parser/-/fast-xml-parser-5.10.1.tgz"
   integrity sha512-IEMIf7298kXuZSRFoGfMYrl7is8LpavODgbNz1cwIudv7KwVFnuU+UsMporfq6PD6aXSlawZlARiA3UywCTfMw==
   dependencies:
     "@nodable/entities" "^3.0.0"
