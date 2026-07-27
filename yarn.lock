@@ -1358,7 +1358,12 @@
   resolved "https://registry.npmmirror.com/@nestjs/typeorm/-/typeorm-11.0.3.tgz"
   integrity sha512-zJ+E5l7auVVA7c0PsvcMdyvRPKTUqU5s2ToYmOA2QEsXQ42qbUGtK4+1HlRfpHqBkCSXP+phiH4luvf9DyJNog==
 
-"@noble/hashes@^1.1.5":
+"@noble/ciphers@^1.0.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@noble/ciphers/-/ciphers-1.3.0.tgz#f64b8ff886c240e644e5573c097f86e5b43676dc"
+  integrity sha512-2I0gnIVPtfnMw9ee9h1dJG7tp81+8Ob3OJb3Mv37rx5L40/b0i7djjCVvGOVqc9AEIQyvyu1i6ypKdFw8R8gQw==
+
+"@noble/hashes@^1.1.5", "@noble/hashes@^1.6.0":
   version "1.8.0"
   resolved "https://registry.npmmirror.com/@noble/hashes/-/hashes-1.8.0.tgz"
   integrity sha512-jCs9ldd7NwzpgXDIf6P3+NrHh9/sD6CQdxHyjQI+h/6rDNo88ypBxxz45UDuZHz9r3tNz7N/VInSVoVdtXEI4A==
@@ -3990,21 +3995,9 @@ fast-xml-builder@^1.2.0:
     path-expression-matcher "^1.6.2"
     xml-naming "^0.3.0"
 
-fast-xml-parser@^5.10.1:
+fast-xml-parser@^5.10.1, fast-xml-parser@^5.3.4:
   version "5.10.1"
   resolved "https://registry.yarnpkg.com/fast-xml-parser/-/fast-xml-parser-5.10.1.tgz#19313f7c9386c47fa4a1de527547b73ed2cfcede"
-  integrity sha512-IEMIf7298kXuZSRFoGfMYrl7is8LpavODgbNz1cwIudv7KwVFnuU+UsMporfq6PD6aXSlawZlARiA3UywCTfMw==
-  dependencies:
-    "@nodable/entities" "^3.0.0"
-    fast-xml-builder "^1.2.0"
-    is-unsafe "^2.0.0"
-    path-expression-matcher "^1.6.2"
-    strnum "^2.4.1"
-    xml-naming "^0.3.0"
-
-fast-xml-parser@^5.3.4:
-  version "5.10.1"
-  resolved "https://registry.npmmirror.com/fast-xml-parser/-/fast-xml-parser-5.10.1.tgz"
   integrity sha512-IEMIf7298kXuZSRFoGfMYrl7is8LpavODgbNz1cwIudv7KwVFnuU+UsMporfq6PD6aXSlawZlARiA3UywCTfMw==
   dependencies:
     "@nodable/entities" "^3.0.0"
@@ -5275,10 +5268,10 @@ jose@^4.15.4:
   resolved "https://registry.npmmirror.com/jose/-/jose-4.15.9.tgz"
   integrity sha512-1vUQX+IdDMVPj4k8kOxgUqlcK518yluMuGZwqlr44FS1ppZB/5GWh4rZG89erpOBOJjU/OBsnCVFfapsRz6nEA==
 
-jpeg-exif@^1.1.4:
-  version "1.1.4"
-  resolved "https://registry.npmmirror.com/jpeg-exif/-/jpeg-exif-1.1.4.tgz"
-  integrity sha512-a+bKEcCjtuW5WTdgeXFzswSrdqi0jk4XlEtZlx5A94wCoBpFjfFTbo/Tra5SpNCl/YFZPvcV1dJc+TAYeg6ROQ==
+js-md5@^0.8.3:
+  version "0.8.3"
+  resolved "https://registry.yarnpkg.com/js-md5/-/js-md5-0.8.3.tgz#921bab7efa95bfc9d62b87ee08a57f8fe4305b69"
+  integrity sha512-qR0HB5uP6wCuRMrWPTrkMaev7MJZwJuuw4fnwAzRgP4J4/F8RwtodOKpGp4XpqsLBFzzgqIO42efFAyz2Et6KQ==
 
 js-tokens@^4.0.0:
   version "4.0.0"
@@ -6345,16 +6338,17 @@ pdf-lib@^1.17.1:
     pako "^1.0.11"
     tslib "^1.11.1"
 
-pdfkit@^0.17.2:
-  version "0.17.2"
-  resolved "https://registry.npmmirror.com/pdfkit/-/pdfkit-0.17.2.tgz"
-  integrity sha512-UnwF5fXy08f0dnp4jchFYAROKMNTaPqb/xgR8GtCzIcqoTnbOqtp3bwKvO4688oHI6vzEEs8Q6vqqEnC5IUELw==
+pdfkit@^0.19.1:
+  version "0.19.1"
+  resolved "https://registry.yarnpkg.com/pdfkit/-/pdfkit-0.19.1.tgz#633d5f031ce6f1ba6ce141325c6cf87fa6acb0a2"
+  integrity sha512-6Gzk+wDwTs4VSxsR5rCMTnIl5nlmkye1oWB0l2hDB1EX6ZNSIBroKQEv+2+fPPn+stVjyqzmsqRJVDfB9fo5DA==
   dependencies:
-    crypto-js "^4.2.0"
+    "@noble/ciphers" "^1.0.0"
+    "@noble/hashes" "^1.6.0"
     fontkit "^2.0.4"
-    jpeg-exif "^1.1.4"
+    js-md5 "^0.8.3"
     linebreak "^1.1.0"
-    png-js "^1.0.0"
+    png-js "^1.1.0"
 
 pg-cloudflare@^1.4.0:
   version "1.4.0"
@@ -6467,9 +6461,9 @@ pluralize@8.0.0:
   resolved "https://registry.npmmirror.com/pluralize/-/pluralize-8.0.0.tgz"
   integrity sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==
 
-png-js@^1.0.0:
+png-js@^1.1.0:
   version "1.1.0"
-  resolved "https://registry.npmmirror.com/png-js/-/png-js-1.1.0.tgz"
+  resolved "https://registry.yarnpkg.com/png-js/-/png-js-1.1.0.tgz#60a135216601f807b88a6d61ac93bd42a32c5ee1"
   integrity sha512-PM/uYGzGdNSzqeOgly68+6wKQDL1SY0a/N+OEa/+br6LnHWOAJB0Npiamnodfq3jd2LS/i2fMeOKSAILjA+m5Q==
   dependencies:
     browserify-zlib "^0.2.0"
