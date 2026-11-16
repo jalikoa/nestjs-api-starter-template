@@ -97,7 +97,7 @@ jobs:
       - name: "Run Snyk to check for vulnerabilities"
         if: steps.snyk-check.outputs.enabled == 'true'
         # Pin to immutable commit SHA (snyk/actions master @ 2024-era verified tip)
-        uses: snyk/actions/node@8e119fbb6c251787721d34ba683ed48eba792766
+        uses: snyk/actions/node@11b673cfb4b0dc0d860a1323caa199d54950dcce
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
